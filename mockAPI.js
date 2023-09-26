@@ -1,7 +1,7 @@
 const apiData = document.querySelector('.mock');
 let mockData;
 
-fetch('http://localhost:3000/posts')
+fetch('https://64f732e69d775408495348ae.mockapi.io/api/v1/authmock')
   .then((response) => response.json())
   .then((data) => {
     mockData = data; // 데이터를 변수에 할당
@@ -21,7 +21,7 @@ function displayMockData(data) {
   // 데이터를 화면에 표시
   data.forEach((item) => {
     const itemElement = document.createElement('div');
-    itemElement.textContent = item.city; //  title 속성을 화면에 출력
+    itemElement.textContent = item.name; //  title 속성을 화면에 출력
     mockContainer.appendChild(itemElement);
     console.log(item);
   });
