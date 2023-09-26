@@ -1,5 +1,6 @@
 const subBtn = document.querySelector('#btn');
 
+// 함수 선언식
 function Idsubmit(event) {
   event.preventDefault();
   var id = document.getElementById('id').value;
